@@ -6,12 +6,26 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Creative-Site",
+    decription: "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
+    author: "Samir Mujanovic",
+    data: {
+      name: 'John',
+      age: 24,
+    },
+  },
   plugins: [
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        // Add any options here
+        name: `pages`,
+        path: `${__dirname}/src/images/`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-transition-link`
   ],
 }
