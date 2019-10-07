@@ -6,18 +6,20 @@ import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
+import FeaturedTours from '../components/Home/FeaturedTours'
 
 export default ({ data }) => (
 
-    <Layout>
-        <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-            <Banner title="continue exploring" info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatumsapiente id sit ut soluta quam.">
-                <AniLink fade to="/tours" className="btn-white">explore tours</AniLink>
-            </Banner>
-        </StyledHero>
-        <About />
-        <Services />
-    </Layout>
+  <Layout>
+    <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
+      <Banner title="continue exploring" info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatumsapiente id sit ut soluta quam.">
+        <AniLink fade to="/tours" className="btn-white">explore tours</AniLink>
+      </Banner>
+    </StyledHero>
+    <About />
+    <Services />
+    <FeaturedTours />
+  </Layout>
 )
 
 export const query = graphql`
