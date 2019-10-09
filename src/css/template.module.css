@@ -37,6 +37,7 @@
 }
 .desc {
   line-height: 2;
+  max-width: 800px;
 }
 .template h4 {
   text-transform: capitalize;

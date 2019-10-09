@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap");
 
 :root {
-  --primaryColor: #3fd0d4;
+  --primaryColor: #00bcd4;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 4px;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainSpacing: 1px;
+  --lightShadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  --darkShadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
@@ -50,6 +50,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .btn-white,
 .btn-primary {
   text-transform: uppercase;
@@ -60,6 +61,8 @@ a {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  font-weight: 600;
+  border-radius: 30px;
 }
 .btn-white:hover {
   background: var(--mainWhite);

@@ -22,9 +22,43 @@ label {
   font-size: 1rem;
   margin-bottom: 1rem;
   padding: 0.375rem 0.75rem;
-  border: 1px solid var(--darkGrey);
-  border-radius: 0.25rem;
+  border: none;
+  border-bottom: 1px solid var(--darkGrey);
+  margin: 20px 0;
+  transition: var(--mainTransition);
 }
+.submit {
+  width: 20%;
+  border-radius: 30px;
+  padding: 10px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff !important;
+  border: 2px solid transparent;
+}
+
+.submit:hover {
+  background-color: #fff !important;
+  color: var(--primaryColor) !important;
+  border: 2px solid var(--primaryColor) !important;
+}
+
+.formControl::placeholder {
+  font-size: 20px;
+}
+
+.formControl:focus {
+  outline: none;
+  border-bottom: 1px solid var(--primaryColor);
+}
+
+textarea {
+  font-family: "Raleway", sans-serif;
+  color: var(--mainBlack);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .submit {
   background-color: var(--primaryColor);
   border-color: var(--primaryColor);

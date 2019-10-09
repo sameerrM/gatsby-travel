@@ -13,13 +13,25 @@
   margin: 2rem 0;
   text-align: center;
 }
-.service span {
-  background: var(--primaryColor);
-  padding: 0.5rem;
-  display: inline-block;
+
+.service .circleIcon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  transition: var(--mainTransition);
 }
+
+.service:hover .circleIcon {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
 .service h4 {
   text-transform: uppercase;
 }

@@ -4,6 +4,7 @@
 }
 .tour:hover {
   box-shadow: var(--darkShadow);
+  transform: scale(1.02);
 }
 
 .img-container {
@@ -32,6 +33,7 @@
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  font-weight: 600;
 }
 .link:hover {
   background: var(--mainWhite);

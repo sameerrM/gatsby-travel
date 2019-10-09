@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'gatsby-image'
 import styles from '../../css/tour.module.css'
-import { FaMap } from 'react-icons/fa'
+import { FaGlobeAmericas } from 'react-icons/fa'
 import Anilink from 'gatsby-plugin-transition-link/AniLink'
 
 const Tour = ({ tour }) => {
@@ -20,7 +20,7 @@ const Tour = ({ tour }) => {
                     <h3>{name}</h3>
                     <div className={styles.info}>
                         <h4 className={styles.country}>
-                            <FaMap className={styles.icon} />
+                            <FaGlobeAmericas className={styles.icon} />
                             {country}
                         </h4>
                         <div className={styles.details}>
