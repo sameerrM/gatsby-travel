@@ -24,7 +24,7 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/images/`,
-      },
+      }
     },
     {
       resolve: `gatsby-source-contentful`,
@@ -38,5 +38,5 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`
-  ],
+  ]
 }

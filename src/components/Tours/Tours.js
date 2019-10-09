@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Tourlist from "./Tourlist"
 const Tours = () => {
-    const { tours } = useStaticQuery(graphql`
+  const { tours } = useStaticQuery(graphql`
     query {
       tours: allContentfulTour {
         edges {
@@ -15,7 +15,7 @@ const Tours = () => {
             days
             images {
               fluid {
-                ...GatsbyContentfulFluid_tracedSVG
+                ...GatsbyContentfulFluid
               }
             }
           }
@@ -24,7 +24,7 @@ const Tours = () => {
     }
   `)
 
-    return <Tourlist tours={tours} />
+  return <Tourlist tours={tours} />
 }
 
 export default Tours
