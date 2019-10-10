@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import { FaWallet, FaTree, FaSocks } from 'react-icons/fa'
 
 export default [
